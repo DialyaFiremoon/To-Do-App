@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListMe App | Pricing</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <!-------- ↓ Navbar ↓ --------->    
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="nav-brand" href="./index.html">
+            <img src="./images/logo.svg" alt="Logo" height="50px" width="auto">
+                    </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+            <img src="./images/menuicon.svg" alt="Hamburger Icon" height="40px" width="auto">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="./features.html" class="nav-link">Features</a></li>
+                    <li class="nav-item"><a href="./pricing.html" class="nav-link">Pricing</a></li>
+                    <li class="nav-item d-block d-lg-none"><a href="./login.html" class="nav-link">Login</a></li>
+                    <li class="nav-item d-block d-lg-none"><a href="./signup.html" class="nav-link">Signup</a></li>
+                </ul>
+<div class="d-flex gap-2 ms-3 d-lg-block d-none">
+    <a class="btn btn-outline-light" href="./login.html">Login</a>
+    <a class="btn btn-outline-light" href="./signup.html">Sign Up</a>
+</div>
+
+        </div>
+
+    
+    </nav>
+
+    <!--------  end Navbar  --------->    
+
+
+    <!-------- ↓ Hero ↓ --------->    
+<!-- <section class="p-5 d-flex justify-content-center align-items-center flex-column pageNotReady">
+    <h1 class="text-center mb-5"> Oops! This page is not ready yet!</h1>
+    <a href="./index.html" class="text-black">Go Home</a>
+
+</section> -->
+    <!-------- end Hero --------->    
+
+    <!--------Pricing cards ------->
+
+      <section class="py-5 cardcolour m-0 bg-img">
+    <div class="container">
+      <h1 class="display-4 text-center mb-4 cardheading text-white"> Different options to meet the needs of your business</h1>
+      <div class="row">
+
+        <div class="col-lg-3 mb-4">
+          <div class="card team-member shadow"> 
+            <img src="/frontend/images/personaluse.jpg" class="card-img-top" alt="Woman pinning picture to board">
+            <div class="card-body">
+              <h4 class="card-title">Personal use</h4>
+              <p class="card-text" id="pricingPersonal"><strong>$2.00</strong> per week</p>
+              <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="switchPersonal">
+  <label class="form-check-label" for="switchPersonal">Switch to annual pricing</label> </div>
+              <p><small>Perfect for individuals who want to stay organized and motivated. Whether you're planning your week or setting personal goals, this tier keeps things simple and focused.
+</small></p>
+              <h5>  Features: </h5>
+              <ul><small>
+
+<li>Create and manage unlimited personal tasks</li>
+<li>Daily and weekly goal tracking</li>
+<li>Custom reminders and notifications</li>
+<li>Calendar integration (Google, Apple)</li>
+<li>Basic analytics (task completion rate)</li>
+<li>Mobile and desktop access</li>
+</small>
+            
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 mb-4">
+          <div class="card team-member shadow"> 
+            <img src="/frontend/images/projectmanagement.jpg" class="card-img-top" alt="Two men in construction clothes and hardhats looking at a documents">
+            <div class="card-body">
+              <h4 class="card-title">Project Management</h4>
+              <p class="card-text" id="pricingPM"><strong>$6.00</strong> per week</p>
+              <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="switchPM">
+  <label class="form-check-label" for="switchPM">Switch to annual pricing</label> </div>
+              <p><small>Designed for freelancers, creatives, and small teams managing projects. Collaborate, delegate, and track progress with ease.</small></p>
+            <h5>  Features: </h5>
+              <ul><small>
+
+<li>All Personal features</li>
+<li>Shared project boards</li>
+<li>Task assignment and due dates</li>
+<li>File attachments and comments
+</li>
+<li>Priority tagging and labels
+</li>
+<li>Progress tracking dashboard</li>
+<li>Email and Slack notifications
+</li>
+<li>Limited team collaboration (up to 5 users)</li>
+</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 mb-4">
+          <div class="card team-member shadow"> 
+            <img src="/frontend/images/smallbusiness.jpg" class="card-img-top" alt="A woman smiling at the camera and putting her hand up with a group of hands for a team high 5">
+            <div class="card-body">
+              <h4 class="card-title">Small Business</h4>
+              <p class="card-text" id="pricingSmallBusiness"><strong>$12.00</strong> per week</p> 
+              <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="switchSmallBusiness">
+  <label class="form-check-label" for="switchSmallBusiness">Switch to annual pricing</label>
+</div>
+              <p><small>Empower your business with streamlined goal tracking and team coordination. Ideal for startups and small companies looking to scale efficiently. </small></p>
+                      <h5>  Features: </h5>
+              <ul><small>
+
+<li>All Project Management features</li>
+<li>10 team members</li>
+<li>Role-based permissions</li>
+<li>Recurring tasks and templates</li>
+<li>Time tracking and reporting</li>
+<li>Integration with Trello, Asana and Microsoft Teams</li>
+<li>Custom branding and workspace themes</li>
+<li>Advanced analytics and performance insights</li>
+</small>
+            </div>
+          </div>
+        </div>
+
+                <div class="col-lg-3 mb-4">
+          <div class="card team-member shadow"> 
+            <img src="/frontend/images/corporate.jpg" class="card-img-top" alt="A group of 3 women at a desk collaborating">
+            <div class="card-body">
+              <h4 class="card-title">Corporate</h4>
+              <p class="card-text" id="pricingCorporate"><strong>$20.00</strong> per week and an additional $2.00 for each user over 20</p>
+              <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="switchCorporate">
+  <label class="form-check-label" for="switchCorporate">Switch to annual pricing</label> </div>
+              <p><small>Built for large organizations with complex workflows. Maximize productivity across departments with enterprise-grade tools and support.</small></p>
+                               <h5>  Features: </h5>
+              <ul><small>
+
+<li>All Small Business features</li>
+<li>Departmental dashboards and reporting</li>
+<li>SSO and enterprise-level security</li>
+<li>API access and custom integrations</li>
+<li>Dedicated account manager</li>
+<li>SLA-backed uptime guarantee</li>
+<li>Onboarding and training support
+</li>
+<li>Quarterly strategy reviews and optimization</li>
+</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--------Sign up-------->
+<main class="d-flex justify-content-center flex-column align-items-center features4-img">
+    <h1 class="display-2 text-center text-white">Ready to get started?</h1>
+    <div class="d-flex justify-content-center align-items-center mt-5">
+        <a href="./signup.html" class="btn btn-secondary px-5">Sign up now</a>
+    </div>
+</main>
+
+    <!-------- ↓ Footer ↓ --------->    
+
+   
+    <footer>
+        <div class="container py-5">
+            <div class="d-flex justify-content-between flex-column gap-5 gap-md-0 flex-md-row align-items-center px-3 mb-5">
+                <a href="./index.html">
+                    <img src="./images/logo.svg" alt="Logo" height="120px" width="auto">
+                </a>
+                <div class="col-12 col-sm-8 col-md-7 col-lg-5 col-xl-4">
+                    <h3 class="text-white mb-3 text-center text-md-start">Subscribe to our Newsletter</h3>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                        <button class="btn btn-secondary">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center flex-column gap-3 flex-md-row align-items-center">
+                <a class="nav-link" href="#"> Privacy Policy</a>
+                <p class="m-0 d-none d-md-block"> | </p>
+                 <a class="nav-link" href="#"> Terms of Service</a>
+                <p class="m-0 d-none d-md-block"> | </p>
+                 <a class="nav-link" href="#"> Privacy Policy</a>
+                <p class="m-0 "> ListMe &COPY; 2025 All Rights Reserved </p>
+            </div>
+        </div>
+    </footer>
+
+     <!-------- end Footer --------->       
+
+    <!-------- ↓ Scripts ↓ --------->    
+
+
+
+  
+<script src="/frontend/pricing.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

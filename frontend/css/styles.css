@@ -1,0 +1,143 @@
+:root {
+--primary: #005F73;
+--secondary: #EE9B00;
+
+}
+
+nav, footer {
+    background-color: var(--primary);
+    color: white;
+
+}
+
+.nav-link {
+    color: white;
+
+}
+
+.nav-link:hover {
+    color: var(--secondary);
+}
+
+.bg-img {
+    background-image: url(../images/hero.jpg);
+    min-height: 80vh;
+    height: auto;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: #001219;
+}
+
+.features-img {
+    background-image: url(../images/computer.jpg);
+    min-height: 80vh;
+    height: auto;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 18, 25, 0.8);
+}
+
+body {
+    background-color: var(--primary);
+}
+
+.pageNotReady {
+    background-color: #94D2BD;
+    height: 66vh;
+}
+
+form a {
+    text-decoration: none;
+    color: var(--primary);
+    transition: 0.2s ease-in-out
+}
+
+form a:hover {
+    text-decoration: underline;
+    color: var(--secondary);
+}
+
+
+.team-member {
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+.member {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.member img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.card-img-top {
+    height: 350px;
+    object-fit: cover;
+}
+
+.features2-img  {
+    background-image: url(../images/collabf2.jpg);
+    min-height: 80vh;
+    height: auto;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 18, 25, 0.6);
+}
+
+.features3-img  {
+    background-image: url(../images/reporting.jpg);
+    min-height: 80vh;
+    height: auto;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 18, 25, 0.9);
+}
+
+.features4-img  {
+    background-image: url(../images/integration.jpg);
+    min-height: 80vh;
+    height: auto;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 18, 25, 0.6);
+}
+
+.my-rounded-table {
+  border-collapse: separate; 
+  border-spacing: 0; 
+  border-radius: 20px; 
+  overflow: hidden; 
+}
+
+.table-animate {
+  opacity: 0;
+  transform: scale(0.8) translateY(50px);
+  transition: transform 1s ease-out, opacity 0.6s ease-out;
+}
+
+.table-animate.visible {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
