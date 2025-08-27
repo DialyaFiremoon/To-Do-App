@@ -16,7 +16,15 @@ const app = express();  // Using Express.js to power the app
 // ------------------- ↓  MIDDLEWARE SETUP  ↓ -------------------------------
 
 app.use(express.json()); // Uses express in JSON form
-app.use(cors('*')); // Enables use of CORS - * means every domain is now allowed access to this server to send and receive data - not secure - * is for dev only 
+
+
+const corsOptions = { 
+    origin: "https://to-do-app-eta-ten.vercel.app",  // remove slash at end
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE"], 
+    credentials: true
+}
+
+app.use(cors('corsOptions')); // Enables use of CORS - * means every domain is now allowed access to this server to send and receive data - not secure - * is for dev only 
 
 // ------------------- ↓ API ROUTES  ↓ -------------------------------
 
