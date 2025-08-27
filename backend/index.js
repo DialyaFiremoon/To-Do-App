@@ -19,7 +19,7 @@ app.use(express.json()); // Uses express in JSON form
 
 
 const corsOptions = { 
-    origin: "https://to-do-app-eta-ten.vercel.app",  // remove slash at end
+    origin: ["https://to-do-app-eta-ten.vercel.app", "http://127.0.0.1:5500"],  // remove slash at end
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"], 
     credentials: true
 }
